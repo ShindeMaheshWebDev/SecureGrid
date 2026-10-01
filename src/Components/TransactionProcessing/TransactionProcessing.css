@@ -1,0 +1,146 @@
+/* Unique Prefix: tp-kinetic- */
+.tp-kinetic-section {
+    padding: 80px 5%;
+    background:  linear-gradient(90deg, #001a3df2 0%, #001a3db3 100%); /* Aapka theme color */
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .tp-kinetic-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    z-index: 2;
+    width: 100%;
+  }
+  
+  /* Left Typography Styling */
+  .tp-kinetic-tag {
+    color: #F7941D;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    font-size: 0.9rem;
+  }
+  
+  .tp-kinetic-title {
+    font-size: 3.3rem;
+    line-height: 0.9;
+    font-weight: 900;
+    color: white;
+    margin: 20px 0;
+  }
+  
+  .tp-kinetic-main-text {
+    font-size: 1.2rem; /* Large Font */
+    color: #e2e8f0;
+    line-height: 1.4;
+    margin-bottom: 25px;
+    border-left: 4px solid #f37021;
+    padding-left: 20px;
+  }
+  
+  .tp-kinetic-main-text strong {
+    color: #f37021;
+  }
+  
+  .tp-kinetic-sub-text {
+    font-size: 1.2rem;
+    color: #fff;
+    line-height: 1.6;
+  }
+  
+  /* Right Side List Styling */
+  .tp-kinetic-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .tp-kinetic-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    cursor: pointer;
+    position: relative;
+    transition: background 0.3s ease;
+  }
+  
+  .tp-item-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .tp-item-num {
+    font-size: 1rem;
+    font-weight: 900;
+    color: #F7941D;
+    font-family: monospace;
+  }
+  
+  .tp-item-label {
+    font-size: 1.3rem; /* Large Font */
+    font-weight: 600;
+    color: #f8fafc;
+  }
+  
+  .tp-kinetic-arrow {
+    color: #f37021;
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: 0.3s;
+  }
+  
+  .tp-kinetic-item:hover {
+    background: rgba(243, 112, 33, 0.05);
+  }
+  
+  .tp-kinetic-item:hover .tp-kinetic-arrow {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  .tp-item-hover-line {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    background: #f37021;
+    width: 0;
+    transition: width 0.4s ease;
+  }
+  
+  /* Background Large Text */
+  .tp-kinetic-bg-text {
+    position: absolute;
+    bottom: -20px;
+    right: -20px;
+    font-size: 25rem;
+    font-weight: 900;
+    color: rgba(255, 255, 255, 0.02);
+    user-select: none;
+    z-index: 1;
+  }
+  
+  /* Responsive */
+  @media (max-width: 1024px) {
+    .tp-kinetic-container {
+      grid-template-columns: 1fr;
+      gap: 40px;
+    }
+    .tp-kinetic-title {
+      font-size: 3.5rem;
+    }
+    .tp-item-label {
+      font-size: 1.2rem;
+    }
+  }

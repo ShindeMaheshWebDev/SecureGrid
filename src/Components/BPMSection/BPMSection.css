@@ -1,0 +1,121 @@
+.sg-bpm-v2-wrapper {
+  padding: 80px 5%;
+  background:  linear-gradient(90deg, #001a3df2 0%, #001a3db3 100%); /* Aapka theme color */
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.sg-bpm-v2-glass-container {
+  max-width: 1200px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.02);
+  backdrop-filter: blur(25px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 60px;
+  gap: 40px;
+  box-shadow: 0 40px 100px rgba(0, 0, 0, 0.5);
+}
+
+.sg-bpm-v2-content {
+  flex: 1;
+  min-width: 300px;
+}
+
+.sg-bpm-v2-title {
+  color: #ffff;
+  font-size: 2.8rem;
+  font-weight: 800;
+  margin: 0 0 10px 0;
+}
+
+.sg-bpm-v2-subtitle {
+  color: #F7941D; 
+  text-decoration: underline;
+  letter-spacing: 2px;
+  font-size: 1rem;
+  margin-bottom: 30px;
+}
+
+.sg-bpm-v2-text-block {
+  color: #dbe2eb;
+  line-height: 1.8;
+  font-size: 1.1rem;
+}
+
+.sg-bpm-v2-badge {
+  margin-top: 30px;
+  background: rgba(243, 112, 33, 0.1);
+  border-left: 4px solid #f37021;
+  padding: 20px;
+  border-radius: 0 15px 15px 0;
+  display: flex;
+  gap: 15px;
+  color: #e2e8f0;
+}
+
+.sg-bpm-v2-icon-spin {
+  color: #f37021;
+  flex-shrink: 0;
+}
+
+/* Right Side Services */
+.sg-bpm-v2-visual {
+  flex: 0.8;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sg-bpm-v2-core {
+  background: #F7941D;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-weight: 900;
+  border-radius: 15px;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+
+.sg-bpm-v2-services-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font-size: 1.1rem;
+}
+
+.sg-bpm-v2-item {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 18px 25px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+  transition: 0.3s all ease;
+}
+
+.sg-bpm-v2-item-icon {
+  color: #f37021;
+}
+
+.sg-bpm-v2-item-text {
+  color: white;
+  font-weight: 500;
+  
+}
+
+/* Responsive fixes */
+@media (max-width: 992px) {
+  .sg-bpm-v2-glass-container {
+    flex-direction: column;
+    padding: 30px;
+    
+  }
+ 
+}

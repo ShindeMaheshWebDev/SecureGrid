@@ -1,0 +1,95 @@
+.team-root-wrapper {
+  padding: 100px 20px;
+  background: linear-gradient(90deg, #001a3df2 0%, #001a3db3 100%);
+}
+
+.team-inner-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.team-header-box {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.team-main-heading {
+  font-size: 3rem;
+  color: #fff;
+  font-weight: 900;
+  letter-spacing: -1px;
+}
+
+.team-main-heading span {
+  color: #F7941D;
+}
+
+.team-orange-divider {
+  width: 80px;
+  height: 5px;
+  background: linear-gradient(90deg, #ff6600, #ffae42);
+  margin: 15px auto;
+  border-radius: 50px;
+}
+
+.team-members-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.team-member-card {
+  position: relative;
+  background: linear-gradient(90deg, #001a3df2 0%, #001a3db3 100%);
+  padding: 50px 30px;
+  border-radius: 20px;
+  border: 2px solid #616e8a;
+  text-align: center;
+  box-shadow: 0 15px 35px rgba(255, 102, 0, 0.05);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: border-color 0.3s ease;
+}
+
+.team-member-card:hover {
+  border-color: #F7941D;
+  box-shadow: 0 20px 40px rgba(255, 102, 0, 0.1);
+}
+
+.team-card-decoration {
+  position: absolute;
+  top: 0;
+  right: -20px;
+  width: 60px;
+  height: 60px;
+  background: rgba(255, 102, 0, 0.1);
+  border-radius: 50%;
+}
+
+.team-member-name {
+  font-size: 1.5rem;
+  color: #ffff;
+  margin-bottom: 10px;
+  font-weight: 700;
+  line-height: 1.2; /* Line spacing ko set kiya */
+}
+
+/* Last word ko block banane ke liye agar zarurat pade */
+.team-member-name span {
+  display: inline-block;
+}
+
+.team-member-role {
+  font-size: 1rem;
+  color: #F7941D;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  .team-main-heading { font-size: 2.2rem; }
+  .team-root-wrapper { padding: 60px 15px; }
+}

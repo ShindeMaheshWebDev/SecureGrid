@@ -1,0 +1,73 @@
+.director-section {
+  background:  linear-gradient(90deg, #001a3df2 0%, #001a3db3 100%); /* Aapka theme color */
+    padding: 80px 20px;
+    color: white;
+  }
+  
+  .section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+  }
+  
+  .highlight { color: #F7941D; }
+  
+  .director-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .director-card {
+    display: flex;
+    background: rgba(255, 255, 255, 0.05);
+    border-left: 4px solid #F7941D;
+    border-radius: 15px;
+    padding: 30px;
+    gap: 30px;
+    align-items: center;
+    backdrop-filter: blur(10px);
+  }
+  
+  .director-img-container img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 3px solid #F7941D;
+    object-fit: cover;
+  }
+  
+  .director-info h3 {
+    font-size: 1.8rem;
+    color: #F7941D;
+    margin-bottom: 10px;
+  }
+  
+  .exp-tag {
+    font-weight: bold;
+    color: #a0b3d1;
+    margin-bottom: 15px;
+  }
+  
+  .director-info ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .director-info li {
+    margin-bottom: 8px;
+    font-size: 1.2rem;
+    line-height: 1.4;
+    color: #ece3e3;
+  }
+  
+  .key-highlight {
+    font-weight: 600;
+    color: #F7941D!important;
+  }
+  
+  @media (max-width: 768px) {
+    .director-card { flex-direction: column; text-align: center; }
+  }

@@ -1,0 +1,151 @@
+.team-section {
+    background:  linear-gradient(90deg, #001a3df2 0%, #001a3db3 100%); /* Aapka theme color */
+    padding: 100px 20px;
+    color: white;
+    overflow: hidden;
+    
+  }
+  
+  .team-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: start;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    color: #F7941D;
+    margin-bottom: 10px;
+  }
+  
+  .sub-text {
+    color: #a0b3d1;
+    margin-bottom: 40px;
+    font-style: italic;
+    font-size: 18px;
+  }
+  
+  /* Hierarchy Flow Styles */
+  .hierarchy-flow {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .flow-item {
+    display: flex;
+    align-items: center;
+    gap: 0;
+  }
+  
+  .flow-box {
+    min-width: 160px;
+    padding: 20px;
+    border-radius: 12px 0 0 12px;
+    font-weight: 700;
+    text-align: center;
+    z-index: 2;
+  }
+  
+  .dark-blue { background: #003366; }
+  .mid-blue { background: #1a5e9e; }
+  .light-blue { background: #4a90e2; }
+  
+  .flow-arrow {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 15px 25px;
+    flex-grow: 1;
+    border-radius: 0 50px 50px 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .flow-arrow::after {
+    content: '▶';
+    position: absolute;
+    right: 20px;
+    color: #F7941D;
+  }
+  
+  .flow-arrow p {
+    font-size: 1rem;
+    margin: 0;
+    color: #ece3e3;
+  }
+  
+  /* Talent Pool Card */
+  .talent-pool-card {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(10px);
+    border-left: 5px solid #F7941D;
+    padding: 40px;
+    border-radius: 0 20px 20px 0;
+  }
+  
+  .talent-header h3 {
+    font-size: 1.8rem;
+    margin-bottom: 5px;
+  }
+  
+  .talent-header p {
+    color: #a0b3d1;
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+  }
+  
+  .talent-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+  
+  .talent-tag {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: 0.3s;
+  }
+  
+  .bullet {
+    width: 6px;
+    height: 6px;
+    background: #F7941D;
+    border-radius: 50%;
+  }
+  
+  /* Mobile Responsive */
+  @media (max-width: 968px) {
+    .team-container {
+      grid-template-columns: 1fr;
+      margin-top: -100px;
+    }
+    
+    .flow-item {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    .flow-box {
+      width: 100%;
+      border-radius: 12px 12px 0 0;
+    }
+    
+    .flow-arrow {
+      width: 100%;
+      border-radius: 0 0 12px 12px;
+    }
+  
+    .talent-grid {
+      grid-template-columns: 1fr;
+    }
+  }

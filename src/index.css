@@ -1,0 +1,53 @@
+/* ------------------------------
+   GLOBAL RESET
+-------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ------------------------------
+   ROOT & SCROLL
+-------------------------------- */
+html {
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+ /* overflow-x: hidden; */
+ width: 100%;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background-color: #f8f9fb;
+  color: #222;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+/* Prevent iOS zoom on inputs */
+input,
+textarea,
+select {
+  font-size: 16px;
+}
+
+/* ------------------------------
+   COMMON SECTIONS
+-------------------------------- */
+section {
+  padding: 80px 10%;
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 60px 6%;
+  }
+}
+
+@media (max-width: 480px) {
+  section {
+    padding: 50px 4%;
+  }
+}

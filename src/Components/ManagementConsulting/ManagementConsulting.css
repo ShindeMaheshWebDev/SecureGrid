@@ -1,0 +1,137 @@
+/* Unique Prefix: mc- (Management Consulting) */
+.mc-section-wrapper {
+    padding: 60px 5%;
+    background:  linear-gradient(90deg, #001a3df2 0%, #001a3db3 100%); /* Aapka theme color */
+    font-family: 'Inter', sans-serif;
+}
+
+.mc-glass-card {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.02);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 30px;
+    padding: 50px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+}
+
+.mc-title {
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.mc-underline {
+    width: 60px;
+    height: 4px;
+    background:  #F7941D; 
+    margin-top: 10px;
+    border-radius: 2px;
+}
+
+.mc-main-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.mc-category-group {
+    margin-bottom: 35px;
+}
+
+.mc-category-title {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.mc-category-title h3 {
+    color: #F7941D; 
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+.mc-icon {
+    color: #F7941D; 
+}
+
+.mc-list {
+    list-style: none;
+    padding: 0;
+}
+
+.mc-list li {
+    color: #ffffff;
+    padding: 10px 0;
+    font-size: 1.06rem;
+    display: flex;
+    align-items: center;
+    cursor: default;
+}
+
+.mc-bullet {
+    width: 8px;
+    height: 8px;
+    background: #F7941D; ;
+    display: inline-block;
+    margin-right: 15px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+/* Right Side Blue Quote Box */
+.mc-quote-box {
+    background: linear-gradient(145deg, #004080 0%, #002d5a 100%);
+    border-radius: 24px;
+    padding: 40px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-right: 8px solid #f37021;
+}
+
+.mc-quote-accent {
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    width: 100px;
+    height: 100px;
+    background: rgba(243, 112, 33, 0.1);
+    border-radius: 50%;
+}
+
+.mc-quote-text {
+    font-style: italic;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #ffffff;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.mc-expert-footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    padding-top: 20px;
+    font-size: 0.99rem;
+    color: #ffffff;
+    line-height: 1.5;
+}
+
+/* Responsive */
+@media (max-width: 968px) {
+    .mc-main-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .mc-glass-card {
+        padding: 30px;
+    }
+}

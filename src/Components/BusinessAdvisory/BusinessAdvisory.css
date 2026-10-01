@@ -1,0 +1,127 @@
+/* Unique Prefix: ba-stream- */
+.ba-stream-section {
+    padding: 100px 5%;
+    background:  linear-gradient(90deg, #001a3df2 0%, #001a3db3 100%); /* Aapka theme color */
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Background Marquee */
+  .ba-marquee-container {
+    position: absolute;
+    top: 10%;
+    left: 0;
+    white-space: nowrap;
+    opacity: 0.03;
+    pointer-events: none;
+  }
+  
+  .ba-marquee-text {
+    font-size: 3.3rem!important;
+    font-weight: 700;
+    color: white;
+  }
+  
+  .ba-stream-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 100%;
+    z-index: 5;
+  }
+  
+  .ba-stream-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 80px;
+    align-items: center;
+  }
+  
+  /* Nodes Column (Left) */
+  .ba-nodes-column {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  .ba-stream-node {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 30px;
+    border-radius: 30px;
+    cursor: pointer;
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100px;
+  }
+  
+  .ba-node-header {
+    display: flex;
+    justify-content: space-between;
+    color: #F7941D; 
+    margin-bottom: 20px;
+  }
+  
+  .ba-node-title {
+    font-size: 1.3rem; /* Massive Font */
+    color: #ffffff;
+    font-weight: 500;
+    line-height: 1.2;
+  }
+  
+  .ba-node-arrow {
+    opacity: 0.3;
+  }
+  
+  .ba-stream-node:hover .ba-node-arrow {
+    opacity: 1;
+    transform: translate(5px, -5px);
+  }
+  
+  /* Impact Column (Right) */
+  .ba-impact-heading {
+    font-size: 3.4rem;
+    font-weight: 900;
+    color: #ffffff;
+    line-height: 0.85;
+    margin-bottom: 30px;
+  }
+
+  .ba-impact-divider {
+    width: 100px;
+    height: 4px;
+    background: #F7941D; ; /* Theme Blue */
+    margin-bottom: 40px;
+  }
+  
+  .ba-impact-quote {
+    font-size: 1.3rem; /* Large Impactful Font */
+    color: #fff;
+    line-height: 1.4;
+    margin-bottom: 40px;
+    font-weight: 300;
+  }
+  
+  .ba-cta-button {
+    background: #f37021;
+    color: white;
+    padding: 18px 40px;
+    border-radius: 50px;
+    border: none;
+    font-weight: 800;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  /* Responsive */
+  @media (max-width: 1024px) {
+    .ba-stream-grid { grid-template-columns: 1fr; }
+    .ba-nodes-column { grid-template-columns: 1fr; }
+    .ba-impact-column { order: -1; }
+    .ba-impact-quote { font-size: 1.4rem; }
+  }

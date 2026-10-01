@@ -1,0 +1,96 @@
+.hero {
+    width: 100%;
+    min-height: calc(100vh - 10px);
+    margin-top: 80px;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  
+    opacity: 0;
+    transform: scale(1.08);
+  }
+  
+  /* animation */
+  .hero.animate {
+    animation: heroZoomFade 1.4s ease forwards;
+  }
+  
+  @keyframes heroZoomFade {
+    from {
+      opacity: 0;
+      transform: scale(1.08);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  /* content */
+  .hero-content {
+    max-width: 90%;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .hero-content h1 {
+    font-size: 52px;
+    font-weight: 700;
+    margin-bottom: 12px;
+  }
+  
+  .hero-content p {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+  
+  /* ================= TABLET ================= */
+  @media (max-width: 768px) {
+    .hero {
+      min-height: 80vh;
+      margin-top: 70px;
+  
+      background-size: contain;
+      background-position: top center;
+  
+      align-items: flex-start;
+      padding-top: 120px; /* 👈 navbar + spacing */
+    }
+  
+    .hero-content h1 {
+      font-size: 38px;
+    }
+  
+    .hero-content p {
+      font-size: 18px;
+    }
+  }
+  
+  /* ================= MOBILE ================= */
+  @media (max-width: 480px) {
+    .hero {
+      min-height: 70vh;
+      margin-top: 64px;
+  
+      background-size: contain;
+      background-position: top center;
+  
+      align-items: flex-start;
+      padding-top: 110px; /* 👈 navbar ke niche clean gap */
+    }
+  
+    .hero-content h1 {
+      font-size: 28px;
+    }
+  
+    .hero-content p {
+      font-size: 16px;
+    }
+  }
+  

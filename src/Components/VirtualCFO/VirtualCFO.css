@@ -1,0 +1,150 @@
+/* Unique Prefix: vcf-v3- */
+.vcf-v3-section {
+    padding: 100px 5%;
+    background:  linear-gradient(90deg, #001a3df2 0%, #001a3db3 100%); /* Aapka theme color */
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+}
+
+.vcf-v3-container {
+    max-width: 1250px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 60px;
+    align-items: center;
+}
+
+/* Left Content Styles */
+.vcf-v3-tag {
+    color: #F7941D;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.vcf-v3-heading {
+    color: #ffffff;
+    font-size: 3.5rem;
+    margin: 10px 0 40px 0;
+    font-weight: 900;
+}
+
+.vcf-v3-blocks-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.vcf-v3-block {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 30px;
+    border-radius: 24px;
+    position: relative;
+    overflow: hidden;
+    transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.vcf-v3-block:hover {
+    border-color: rgba(243, 112, 33, 0.5);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.vcf-v3-block-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.vcf-v3-block-header h3 {
+    color: #F7941D;
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.vcf-v3-items-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.vcf-v3-chip {
+    background: rgba(255, 255, 255, 0.06);
+    color: #ffffff;
+    padding: 6px 16px;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+}
+
+.vcf-v3-corner-arrow {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: rgba(255, 255, 255, 0.1);
+    transition: 0.3s;
+}
+
+.vcf-v3-block:hover .vcf-v3-corner-arrow {
+    color: #f37021;
+    transform: translate(5px, -5px);
+}
+
+/* Right Side Insight Style */
+.vcf-v3-insight-card {
+    background: linear-gradient(135deg, #f37021 0%, #ff8c42 100%);
+    padding: 60px 40px;
+    border-radius: 40px;
+    position: relative;
+    box-shadow: 0 30px 60px rgba(243, 112, 33, 0.3);
+}
+
+.vcf-v3-quote-mark {
+    font-size: 8rem;
+    color: rgba(255, 255, 255, 0.2);
+    position: absolute;
+    top: -20px;
+    left: 20px;
+    font-family: serif;
+}
+
+.vcf-v3-main-quote {
+    color: white;
+    font-size: 1.3rem;
+    line-height: 1.8;
+    position: relative;
+    z-index: 1;
+    font-weight: 500;
+}
+
+.vcf-v3-footer {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: white;
+    font-weight: 700;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+}
+
+.vcf-v3-line {
+    width: 40px;
+    height: 2px;
+    background: white;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .vcf-v3-container {
+        grid-template-columns: 1fr;
+    }
+    .vcf-v3-heading {
+        font-size: 2.5rem;
+    }
+}

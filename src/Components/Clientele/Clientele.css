@@ -1,0 +1,109 @@
+.clientele-section {
+    background:  linear-gradient(90deg, #001a3df2 0%, #001a3db3 100%); /* Aapka theme color */
+    padding: 100px 0;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .clientele-container {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  
+  .clientele-header {
+    text-align: center;
+    margin-bottom: 60px;
+    padding: 0 20px;
+  }
+  
+  .client-subtitle {
+    color: #F7941D; /* Logo Orange */
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 0.85rem;
+  }
+  
+  .client-title {
+    font-size: clamp(2rem, 5vw, 3rem);
+    color: #fff;
+    margin: 10px 0;
+    font-weight: 600;
+  }
+  
+  .client-title span {
+    color: #a0b3d1;
+    font-weight: 300;
+  }
+  
+  .title-underline {
+    width: 60px;
+    height: 4px;
+    background: #F7941D;
+    margin: 0 auto 20px;
+  }
+  
+  .client-desc {
+    color: #94A3B8;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+    font-size: 19px;
+  }
+  
+  /* Marquee Logic */
+  .marquee-wrapper {
+    display: flex;
+    overflow: hidden;
+    user-select: none;
+    gap: 20px;
+    padding: 20px 0;
+    mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  }
+  
+  .marquee-content {
+    display: flex;
+    flex-shrink: 0;
+    gap: 20px;
+    white-space: nowrap;
+  }
+  
+  .industry-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 15px 30px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #fff;
+    font-weight: 600;
+    transition: 0.3s;
+  }
+  
+  .industry-card:hover {
+    background: rgba(247, 148, 29, 0.1);
+    border-color: #F7941D;
+    transform: scale(1.05);
+  }
+  
+  .industry-dot {
+    width: 8px;
+    height: 8px;
+    background: #3b82f6;
+    border-radius: 50%;
+  }
+  
+  .industry-dot.orange {
+    background: #F7941D;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .clientele-section {
+      padding: 60px 0;
+    }
+    .client-title {
+      font-size: 2rem;
+    }
+  }
