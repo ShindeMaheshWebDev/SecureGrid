@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion'; // 1. Import Framer Motion
-import { Scale, ShieldCheck, Briefcase, Search, BarChart3, Settings, Globe, Lock } from 'lucide-react';
+import { Scale, ShieldCheck, Briefcase, Search, Globe} from 'lucide-react';
 import './ServiceDomains.css';
 import mapImg from '../../assets/images/new1.png'; 
 

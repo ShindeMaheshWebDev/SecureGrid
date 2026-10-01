@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 // Logo import
 import logo from '../../assets/images/secure-grid-logo.png'; 
 // React Icons import
-import { FaFacebookF, FaLinkedinIn, FaInstagram } from 'react-icons/fa';
+import {  FaLinkedinIn, FaInstagram } from 'react-icons/fa';
 import { HiOutlineLocationMarker } from 'react-icons/hi'; // Location Icon
 import './Footer.css';
 

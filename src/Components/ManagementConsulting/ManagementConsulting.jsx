@@ -1,6 +1,6 @@
-import React from 'react';
+
 import { motion } from 'framer-motion';
-import { Target, BarChart3, Settings2, ShieldCheck, Database, Layers } from 'lucide-react';
+import { Target, Settings2} from 'lucide-react';
 import './ManagementConsulting.css';
 
 const ManagementConsulting = () => {
